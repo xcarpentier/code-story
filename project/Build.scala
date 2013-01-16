@@ -11,8 +11,10 @@ object ApplicationBuild extends Build {
     // Add your project dependencies here,
   )
 
+  publishTo := Some("release" at "http://repository-grainedekawa.forge.cloudbees.com/release/")
+
   val main = PlayProject(appName, appVersion, appDependencies, mainLang = SCALA).settings(
-    // Add your own project settings here
+
   )
 
 }
